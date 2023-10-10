@@ -31,21 +31,63 @@ public class Main {
                 switch (Integer.parseInt(scanner.nextLine())) {
 
                     case 1:
-                        if (cmpChoice == 1) { System.out.print("\n The game is a draw. We shall try again."); }
-                        else if (cmpChoice == 2) { System.out.print("\n Sorry! You lose. Better luck next time!"); exit = true; }
-                        else if (cmpChoice == 3) { System.out.print("\n Nice! You Win. Well played!"); exit = true; }
+                        if (cmpChoice == 1) {
+                            System.out.print("\n You selected Rock!" +
+                                "\n I have selected Rock!" +
+                                "\n The game is a draw. We shall try again.");
+                        }
+                        else if (cmpChoice == 2) {
+                            System.out.print("\n You selected Rock." +
+                                "\n I have selected Paper!" +
+                                "\n Sorry! You lose. Better luck next time!");
+                            exit = true;
+                        }
+                        else if (cmpChoice == 3) {
+                            System.out.print("\n You selected Rock!" +
+                                "\n I have selected Scissors." +
+                                "\n Nice! You Win. Well played!");
+                            exit = true;
+                        }
                         completed = true;
                         break;
                     case 2:
-                        if (cmpChoice == 1) { System.out.print("\n Nice! You Win. Well played!"); exit = true; }
-                        else if (cmpChoice == 2) { System.out.print("\n The game is a draw. We shall try again."); }
-                        else if (cmpChoice == 3) { System.out.print("\n Sorry! You lose. Better luck next time!"); exit = true; }
+                        if (cmpChoice == 1) {
+                            System.out.print("\n You selected Paper!" +
+                                    "\n I have selected Rock." +
+                                    "\n Nice! You Win. Well played!");
+                            exit = true;
+                        }
+                        else if (cmpChoice == 2) {
+                            System.out.print("\n You selected Paper!" +
+                                    "\n I have selected Paper!" +
+                                    "\n The game is a draw. We shall try again.");
+                        }
+                        else if (cmpChoice == 3) {
+                            System.out.print("\n You selected Paper" +
+                                    "\n I have selected Scissors!" +
+                                    "\n Sorry! You lose. Better luck next time!");
+                            exit = true;
+                        }
                         completed = true;
                         break;
                     case 3:
-                        if (cmpChoice == 1) { System.out.print("\n Sorry! You lose. Better luck next time!"); exit = true; }
-                        else if (cmpChoice == 2) { System.out.print("\n Nice! You Win. Well played!"); exit = true; }
-                        else if (cmpChoice == 3) { System.out.print("\n The game is a draw. We shall try again."); }
+                        if (cmpChoice == 1) {
+                            System.out.print("\n You selected Scissors." +
+                                    "\n I have selected Rock!" +
+                                    "\n Sorry! You lose. Better luck next time!");
+                            exit = true;
+                        }
+                        else if (cmpChoice == 2) {
+                            System.out.print("\n You selected Scissors!" +
+                                    "\n I have selected Paper." +
+                                    "\n Nice! You Win. Well played!");
+                            exit = true;
+                        }
+                        else if (cmpChoice == 3) {
+                            System.out.print("\n You selected Scissors!" +
+                                    "\n I have selected Scissors!" +
+                                    "\n The game is a draw. We shall try again.");
+                        }
                         completed = true;
                         break;
                     default:
